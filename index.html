@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body class="body">
+  <main class="main">
+    <div class="inputs">
+      <div class="inputs__wrapper">
+        <label for="inputs__input--d" class="inputs__label">Day</label>
+        <input autocomplete="off" required maxlength="2" placeholder="DD" type="text" name="inputs__input" id="inputs__input--d" class="inputs__input inputs__input--d">
+        <span class="inputs__error"></span>
+      </div>
+      <div class="inputs__wrapper">
+        <label for="inputs__input--m" class="inputs__label">Month</label>
+        <input autocomplete="off" required maxlength="2" placeholder="MM" type="text" name="inputs__input" id="inputs__input--m" class="inputs__input inputs__input--m">
+        <span class="inputs__error"></span>
+      </div>
+      <div class="inputs__wrapper">
+        <label for="inputs__input--y" class="inputs__label">Year</label>
+        <input autocomplete="off" required maxlength="4" placeholder="YYYY" type="text" name="inputs__input" id="inputs__input--y" class="inputs__input inputs__input--y">
+        <span class="inputs__error"></span>
+      </div>
+    </div>
+
+    <div class="inbetween">
+      <span class="inbetween__line"></span>
+      <button class="inbetween__button">
+        <svg class="inbetween__svg" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+          <g class="inbetween__g" fill="none" stroke="#FFF" stroke-width="2">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <div class="computed">
+      <span class="computed__default">
+        <span class="computed__emp computed__emp--y">--</span>years
+      </span>
+      <span class="computed__default">
+        <span class="computed__emp computed__emp--m">--</span>months
+      </span>
+      <span class="computed__default">
+        <span class="computed__emp computed__emp--d">--</span>days
+      </span>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="attribution__link" href="https://github.com/hiofabien">HioFabien</a>.
+  </footer>
+</body>
+</html>
