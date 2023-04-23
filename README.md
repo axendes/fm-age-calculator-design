@@ -4,8 +4,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ## Links
 
-> Solution URL: [GitHub](https://github.com/hiofabien/interactive-card-details-form)  
-> Live Site URL: [GitHub](https://hiofabien.github.io/interactive-card-details-form)
+> Solution URL: [GitHub](https://github.com/hiofabien/age-calculator-app)  
+> Live Site URL: [GitHub](https://hiofabien.github.io/age-calculator-app)
 
 ## Built with
 
