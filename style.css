@@ -266,23 +266,23 @@
 
 .attribution {
     position: absolute;
-    inset: auto auto 5px;
+    inset: auto 0 1rem 0;
 
     font-size: 1rem;
     text-align: center;
+
+    color: var(--black);
+
+    cursor: default;
 }
 
 .attribution__link {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: transparent;
-
-    color: var(--purple);
-
-    transition: color 200ms, text-decoration-color 200ms;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--black);
+    transition: color 200ms;
 }
 
 .attribution__link:hover {
-    color: var(--black);
-    text-decoration-color: var(--black);
+    color: var(--purple);
 }
