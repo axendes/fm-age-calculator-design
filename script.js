@@ -108,7 +108,7 @@ function isEmpty(e) {
 
 function isDayCorrect(d, m, y) {
     if (isMonthCorrect(m) && isYearCorrect(y) &&
-        ((isLeapYear(y) === true && m === 2 && d > months[m] + 1) ||
+        ((isLeapYear(y) === true && (m === 2 && d > months[m] + 1 || m !== 2 && d > months[m])) ||
         (isLeapYear(y) === false && d > months[m]) ||
         d <= 0 || d > 31)) {
         activateError(inputD, "Must be a valid date");

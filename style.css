@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
 
+/* ------------------------------------------------------------------------Variables */
+
 :root {
     --purple: hsl(259, 100%, 65%);
     --light-red: hsl(0, 100%, 67%);
@@ -29,19 +31,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100svh;
+    min-height: 100vh;
 
     background-color: var(--off-white);
+
+    user-select: none;
 }
 
 /* ------------------------------------------------------------------------Main */
 
 .main {
-    width: 850px;
+    width: 840px;
     padding: 3.5rem;
 
     background-color: var(--white);
-    border-radius: 1.5rem 1.5rem 12rem 1.5rem;
+    border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
 }
 
 /* ------------------------------------------------------------------------Inputs */
@@ -69,7 +73,7 @@
     text-transform: uppercase;
     text-align: left;
     letter-spacing: 4px;
-    font-size: .875rem;
+    font-size: .85rem;
     font-weight: 700;
 
     color: var(--smokey-grey);
@@ -114,8 +118,11 @@
 
     font-size: .9rem;
     font-style: italic;
-
+    white-space: nowrap;
+    
     color: var(--light-red);
+    
+    pointer-events: none;
 }
 
 .inputs__error--active {
@@ -260,29 +267,4 @@
     .attribution {
         display: none;
     }
-}
-
-/* ------------------------------------------------------------------------Attribution */
-
-.attribution {
-    position: absolute;
-    inset: auto 0 1rem 0;
-
-    font-size: 1rem;
-    text-align: center;
-
-    color: var(--black);
-
-    cursor: default;
-}
-
-.attribution__link {
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--black);
-    transition: color 200ms;
-}
-
-.attribution__link:hover {
-    color: var(--purple);
 }
